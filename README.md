@@ -1,11 +1,11 @@
 # Controller Detector
 Detect and recognize Bluetooth and USB controllers and receive feedback based on connectivity changes.
 
-## How to
-Apart from this 'How to', a complete example can be found on /example.
+## Usage
+Apart from this section, a complete example can be found on /example.
 
 **Note:** This is simply an 'How to' of the current test version for feedback purposes, so it is very susceptible to change.
-
+    
 To implement Bluetooth and USB detection you must create the correspondent DeviceDetectors objects and call startDetectingDevices() method on onCreate() and stopDetectingDevices() on onDestroy(), these registers and unregisters the BroadcastReceivers.
 
 To create a DeviceDetector object however, you need to pass the activity context and a implementation of the  ConnectivityHandler interface (represented below as ConnectivityImplementationExample).
