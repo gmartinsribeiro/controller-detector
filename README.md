@@ -41,6 +41,49 @@ You can of course combine both interfaces for convenience to serve as a single l
 
 ```java
 public class ConnectivityImplementationExample implements BluetoothConnectivityHandler, UsbConnectivityHandler {
-  //...
+  @Override
+    public void handleBtPairing(BluetoothDevice device, DeviceInputType type) {
+        // ...
+    }
+
+    @Override
+    public void handleBtUnpairing(BluetoothDevice device, DeviceInputType type) {
+        // ...
+    }
+
+    @Override
+    public void handleBtInputConnect(BluetoothDevice device, DeviceInputType type) {
+        // ...
+    }
+
+    @Override
+    public void handleBtInputDisconnect(BluetoothDevice device, DeviceInputType type) {
+        // ...
+    }
+
+    @Override
+    public void handleBtFound(BluetoothDevice device, DeviceInputType type) {
+        // ...
+    }
+
+    @Override
+    public void handleUsbDeviceAttach(UsbDevice device) {
+        // ...
+    }
+
+    @Override
+    public void handleUsbDeviceDetach(UsbDevice device) {
+        // ...
+    }
+
+    @Override
+    public void handleUsbAccessoryAttach(UsbAccessory device) {
+        // ...
+    }
+
+    @Override
+    public void handleUsbAccessoryDetach(UsbAccessory device) {
+        // ...
+    }
 }
 ```
