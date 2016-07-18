@@ -6,28 +6,32 @@ Apart from this 'How to', a complete example can be found on /example.
 
 **Note:** This is simply an 'How to' of the current test version for feedback purposes, so it is very susceptible to change.
 
-### Bluetooth
-To implement Bluetooth detection you must create a BluetoothDeviceDetector object and call startDetectingDevices() method on onCreate() and stopDetectingBluetoothDevices() on onDestroy(), these registers and unregisters the BroadcastReceiver.
+To implement Bluetooth and USB detection you must create the correspondent DeviceDetectors objects and call startDetectingDevices() method on onCreate() and stopDetectingDevices() on onDestroy(), these registers and unregisters the BroadcastReceivers.
 
-To create a BluetoothDeviceDetector object however, you need to pass the activity context and a implementation of the  BluetoothConnectivityHandler interface (represented as ConnectivityImplementationExample).
+To create a DeviceDetector object however, you need to pass the activity context and a implementation of the  ConnectivityHandler interface (represented below as ConnectivityImplementationExample).
 
 ```java
 public class MainActivity extends AppCompatActivity {
-    private BluetoothDeviceDetector detector;
+    private BluetoothDeviceDetector btDetector;
+    private UsbDeviceDetector usbDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         (...)
         ConnectivityImplementationExample handler = new ConnectivityImplementationExample();
-        detector = new BluetoothDeviceDetector(MainActivity.this, handler);
-        detector.startDetectingDevices();
+        btDetector = new BluetoothDeviceDetector(MainActivity.this, handler);
+        usbDetector = new UsbDeviceDetector(MainActivity.this, handler);
+        btDetector.startDetectingDevices();
+        usbDetector.startDetectingDevices();
         (...)
     }
 
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        detector.stopDetectingBluetoothDevices();
+        (...)
+        btDetector.stopDetectingBluetoothDevices();
+        usbDetector.stopDetectingUsbDevices();
         (...)
     }
 }
