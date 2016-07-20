@@ -2,9 +2,6 @@ package com.aptoide.controllerdetector;
 
 import android.view.InputDevice;
 
-/**
- * Created by franciscofariaaleixo on 20-07-2016.
- */
 public class DeviceRecognizer {
 
     public static DeviceInputType getDeviceInputType(InputDevice dev){
