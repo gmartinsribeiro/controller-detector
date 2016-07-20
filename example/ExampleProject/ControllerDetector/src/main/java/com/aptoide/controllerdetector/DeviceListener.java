@@ -3,9 +3,6 @@ package com.aptoide.controllerdetector;
 import android.hardware.input.InputManager;
 import android.view.InputDevice;
 
-/**
- * Created by franciscofariaaleixo on 18-07-2016.
- */
 public class DeviceListener implements InputManager.InputDeviceListener {
     private ControllerListener listener;
 
