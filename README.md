@@ -60,4 +60,5 @@ Notice onControllerDisconnect only an id is passed since the Device has been dis
 DeviceController defines two useful attributes that you can retrieve: an InputDevice and a DeviceInputType (enum).
 
 For InputDevice you can read further [here.](https://developer.android.com/reference/android/view/InputDevice.html)
+
 For DeviceInputType, it defines the following values: DPAD, GAMEPAD, KEYBOARD, MOUSE, STYLUS, TOUCHPAD, TOUCHSCREEN, TRACKBALL, TVREMOTE, UNRECOGNIZED
