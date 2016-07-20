@@ -56,7 +56,7 @@ public class ControllerListenerExample implements ControllerListener {
 Notice onControllerDisconnect only an id is passed since the Device has been disconnected. This is the same id that you retrieve from DeviceController.getDevice().getId().
 
 
-### DeviceController
+## DeviceController
 DeviceController defines two useful attributes that you can retrieve: an InputDevice and a DeviceInputType (enum).
 
 For InputDevice you can read further [here.](https://developer.android.com/reference/android/view/InputDevice.html)
