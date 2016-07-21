@@ -62,3 +62,6 @@ DeviceController defines two useful attributes that you can retrieve: an InputDe
 For InputDevice you can read further [here.](https://developer.android.com/reference/android/view/InputDevice.html)
 
 For DeviceInputType, it defines the following values: DPAD, GAMEPAD, KEYBOARD, MOUSE, STYLUS, TOUCHPAD, TOUCHSCREEN, TRACKBALL, TVREMOTE, UNRECOGNIZED
+
+## Tested Devices
+An analysis of several devices was made in order to check the correctness of the recognition algorithm. This analysis and the list of confirmed supported devices is [here.](https://docs.google.com/document/d/1Vw1gcduL2oMhtW0se3IvQIH8wanySyLB3CMG4A1ZHpg)
