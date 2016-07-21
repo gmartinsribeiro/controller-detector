@@ -3,7 +3,7 @@ package com.aptoide.controllerdetector;
 import android.hardware.input.InputManager;
 import android.view.InputDevice;
 
-public class DeviceListener implements InputManager.InputDeviceListener {
+class DeviceListener implements InputManager.InputDeviceListener {
     private ControllerListener listener;
 
     public DeviceListener(ControllerListener listener){

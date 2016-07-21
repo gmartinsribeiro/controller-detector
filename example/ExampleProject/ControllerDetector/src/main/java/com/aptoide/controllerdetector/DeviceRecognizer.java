@@ -2,7 +2,7 @@ package com.aptoide.controllerdetector;
 
 import android.view.InputDevice;
 
-public class DeviceRecognizer {
+class DeviceRecognizer {
 
     public static DeviceInputType getDeviceInputType(InputDevice dev){
         if( ((dev.getSources() & InputDevice.SOURCE_GAMEPAD) == InputDevice.SOURCE_GAMEPAD) ||
