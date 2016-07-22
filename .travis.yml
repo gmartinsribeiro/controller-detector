@@ -16,4 +16,4 @@ before_script: cd example/ExampleProject
 before_install:
  - chmod +x example/ExampleProject/gradlew
 script:
- - ./gradlew test --continue
+ - ./gradlew test --continue --stacktrace
