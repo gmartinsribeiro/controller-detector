@@ -13,3 +13,5 @@ android:
     - android-24
     
 before_script: cd example/ExampleProject
+before_install:
+ - chmod +x gradlew
