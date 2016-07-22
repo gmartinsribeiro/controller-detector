@@ -1,4 +1,7 @@
 # Controller Detector
+
+![alt tag](https://travis-ci.org/gmartinsribeiro/controller-detector.svg?branch=master)
+
 Detect and recognize input controllers (HID) and receive feedback based on connectivity changes.
 
 ## Usage
