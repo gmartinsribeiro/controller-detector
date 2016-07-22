@@ -12,6 +12,8 @@ android:
     # The SDK version used to compile your project
     - android-24
 
+jdk:
+ - oraclejdk8
 before_script: cd example/ExampleProject
 before_install:
  - chmod +x example/ExampleProject/gradlew
