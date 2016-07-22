@@ -13,7 +13,7 @@ android:
     - android-24
 
 before_install:
- - chmod +x example/ExampleProject/gradlew<
+ - chmod +x example/ExampleProject/gradlew
  - cd example/ExampleProject
 install: ./gradlew clean build
 script:
