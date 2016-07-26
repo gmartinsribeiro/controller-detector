@@ -1,3 +1,3 @@
-echo "bintray.user=$BINTRAY_USER" >> local.properties
-echo "bintray.apikey=$BINTRAY_APIKEY" >> local.properties
-echo "bintray.gpg.password=$BINTRAY_GPG_PASSWORD" >> local.properties
+echo "bintray.user=$USER" >> local.properties
+echo "bintray.apikey=$APIKEY" >> local.properties
+echo "bintray.gpg.password=$PASSWORD" >> local.properties
