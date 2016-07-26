@@ -17,7 +17,7 @@ jdk:
 before_install:
  - chmod +x gradlew
 before_script:
- - ./.travis.scrip.sh
+ - ./.travis.script.sh
 script:
 - ./gradlew test --continue
 
