@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/gmartinsribeiro/controller-detector'
     gitUrl = 'https://github.com/gmartinsribeiro/controller-detector.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'franciscoaleixo'
     developerName = 'Francisco Aleixo'
