@@ -5,7 +5,7 @@ ext {
     bintrayName = 'controller-detector'
 
     publishedGroupId = 'com.aptoide.pt'
-    libraryName = 'ControllerDetector'
+    libraryName = 'controller-detector'
     artifact = 'controller-detector'
 
     libraryDescription = 'Detect and recognize input controllers (HID) and receive feedback based on connectivity changes.'
@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/gmartinsribeiro/controller-detector'
     gitUrl = 'https://github.com/gmartinsribeiro/controller-detector.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
 
     developerId = 'franciscoaleixo'
     developerName = 'Francisco Aleixo'
