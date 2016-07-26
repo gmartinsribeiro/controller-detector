@@ -16,6 +16,8 @@ jdk:
  - oraclejdk8
 before_install:
  - chmod +x gradlew
+before_script:
+ - ./.travis.scrip.sh
 script:
 - ./gradlew test --continue
 
