@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ControllerDetector/ControllerDetector.iml" filepath="$PROJECT_DIR$/ControllerDetector/ControllerDetector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ControllerDetectorProject.iml" filepath="$PROJECT_DIR$/ControllerDetectorProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControllerDetector.iml" filepath="$PROJECT_DIR$/ControllerDetector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controller-detector/controller-detector.iml" filepath="$PROJECT_DIR$/controller-detector/controller-detector.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tv/tv.iml" filepath="$PROJECT_DIR$/tv/tv.iml" />
     </modules>
   </component>
 </project>
