@@ -5,7 +5,7 @@
 Detect and recognize input controllers (HID) and receive feedback based on connectivity changes.
 
 ## Installation
-You can easily install this module using JCenter, by adding the following dependency to your build.gradle file:
+You can easily install this module using JCenter or Maven, by adding the following dependency to your build.gradle file:
 
 ```java
 dependencies {
