@@ -18,11 +18,11 @@ before_install:
  - chmod +x gradlew
  - chmod +x .travis.script.sh
 before_script:
- - ./.travis.script.sh
+ - ./.travis.bintraysetup.sh
 script:
 - ./gradlew test --continue
-- ./gradlew bintrayUpload
-
+after_success:
+ - ./gradlew bintrayUpload
 env:
   global:
   - secure: "cPWU7JUOyw1KdsHGKvDpaRi3Lv4GDYilduqtJNoJzSY1xMKMAcX+rfO3Uvpr59El6GDMOBUDG/aySGFKQBS0Bht8jW23mNLr46Ks06lHx+tcFehsicONGRsb6rPCvoWjeBtqtEJB7N1DLC7EvHLvvJxGGMMAeyfAlTkBIfekXZ89pwrVE6+0mInJZhvSodocOK42SHzo4hXtwe4OZ97H+Hr8DketNY8tsaCE/Lv5lkXpEtxjWRQdJewGzixOC7d8tsneOMfOp7LYk9VJAEQ17uJL8sXppghpWzyB5BX025RAirLSai9Q+tt3BvPULNh9p77UWOPxmsecCzLzoDVaEuDMhSI9XEA8lbn7NETsas6FyX11QwX4uq3jT7GYTmwTfCscqpsRXlKBasNGyYSjhnwDa0WmzqspnF8LKwCT/6S6rXYmuKiUH5jwpCcx+5Res3P6Hbk9TcEILcyJLimNfGZ5eyOZJQGWBdDSGh0JPWOyTJd4+RgPT2VTslZMJ52FgwgGLYckBfu2P6QAau/yWg8Xem33cks5U+LhoVhPitPvOqoGmPXkwONsdJ7UckoJF3zCT/fZ9pko5BZk6KJl+z0JxZN4q9BgMV9ABbC4oitDoFlZWjfWwZZrKnNCSo6eqjc5am28v/cEJv0RAUxZ027Zv4pLCnOkqvM1bnwYkcQ="
