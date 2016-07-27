@@ -4,6 +4,16 @@
 
 Detect and recognize input controllers (HID) and receive feedback based on connectivity changes.
 
+## Installation
+You can easily install this module using JCenter, by adding the following dependency to your build.gradle file:
+
+```java
+dependencies {
+ compile 'com.aptoide.pt:controller-detector:1.0.0'
+ //...
+}
+```
+
 ## Usage
 Apart from this section, a complete example can be found on /example.
 
