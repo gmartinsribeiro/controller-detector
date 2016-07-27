@@ -16,7 +16,7 @@ jdk:
  - oraclejdk8
 before_install:
  - chmod +x gradlew
- - chmod +x .travis.script.sh
+ - chmod +x .travis.bintraysetup.sh
 before_script:
  - ./.travis.bintraysetup.sh
 script:
