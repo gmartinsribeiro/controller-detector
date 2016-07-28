@@ -15,7 +15,7 @@ dependencies {
 ```
 
 ## Usage
-Apart from this section, a complete example can be found on /example.
+Apart from this section, a complete example can be downloaded from this repo.
 
 You need to create a InputDeviceConnector object and implement ControllerListener interface.
 For InputDeviceConnector you also need to:
@@ -24,15 +24,14 @@ For InputDeviceConnector you also need to:
 
 
 ```java
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ControllerListener {
     private InputDeviceConnector connector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // ...
-        ControllerListenerExample listener = new ControllerListenerExample(MainActivity.this);
-        connector = new InputDeviceConnector(this, listener);
+        connector = new InputDeviceConnector(getApplicationContext(), this);
         connector.startDetectingDevices();
         // ...
     }
@@ -44,11 +43,7 @@ public class MainActivity extends AppCompatActivity {
         connector.stopDetectingDevices();
         // ...
     }
-}
-```
-
-```java
-public class ControllerListenerExample implements ControllerListener {
+    
     @Override
     public void onControllerChange(DeviceController controller) {
         // ...
@@ -63,9 +58,9 @@ public class ControllerListenerExample implements ControllerListener {
     public void onControllerDisconnect(int id) {
         // ...
     }
-  
 }
 ```
+
 Notice onControllerDisconnect only an id is passed since the Device has been disconnected. This is the same id that you retrieve from DeviceController.getDevice().getId().
 
 
